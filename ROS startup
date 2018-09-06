@@ -1,0 +1,13 @@
+Generall guide on how to start up the ROS network. 
+
+1) Open Matlab and type roscore in the Matlab terminal. 
+This will initizialize the ROS master on your PC which the sensors/actuators on the platform will connect to. 
+
+2) Open a terminal and source your setup.bash with the following: source ~/catkin_ws/devel/setup.bash
+
+3) Initizalize the IMU node by typing the following in the terminal: rosrun mavros mavros_node _fcu_url:=/dev/ttyACM0:115200
+
+4) Initialize the LIDAR node by typing the following in a terminal: roslaunch sick_tim sick_tim551_2050001.launch
+
+5) Connection of the nodes and data readings are done in Matlab/Simulink see guide ???
+
